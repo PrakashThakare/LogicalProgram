@@ -8,15 +8,23 @@ namespace LogicalPrograms
 {
     internal class FibonacciNo
     {
-       public static void FibonacciNO(int iValue)
+        public static void PerfectNumber(int iValue)
         {
-            int iValue2 = 1, iSum = 0,iValue3=0;
-            for (int iCnt=0 ; iCnt<iValue ; iCnt++)
+            int iSum = 0;
+            for (int iCnt = 1; iCnt <= (iValue / 2); iCnt++)
             {
-                iSum =iValue3+iValue2; 
-                iValue3 = iValue2; 
-                iValue2 = iSum;
-                Console.WriteLine(iSum);
+                if ((iValue % iCnt) == 0)
+                {
+                    iSum += iCnt;
+                }
+            }
+            if (iSum == iValue)
+            {
+                Console.WriteLine("it is Perfect Number");
+            }
+            else
+            {
+                Console.WriteLine("it is not Perfect Number" + iSum);
             }
         }
     }

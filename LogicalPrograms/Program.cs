@@ -11,9 +11,9 @@ namespace LogicalPrograms
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Enter Number For Fibonacci Number");
+            Console.WriteLine("Enter Number For Check Perfect Or Not");
             int iNo = Convert.ToInt32(Console.ReadLine());
-            FibonacciNo.FibonacciNO(iNo);
+            FibonacciNo.PerfectNumber(iNo);
             Console.ReadLine();
         }
     }
