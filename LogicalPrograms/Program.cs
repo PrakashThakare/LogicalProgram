@@ -10,10 +10,19 @@ namespace LogicalPrograms
     {
         static void Main(string[] args)
         {
+            
+            int []Arr = new int[5];
+            Console.WriteLine("Enter Numbers For Coupon");
+            for(int iCnt =0;iCnt<=Arr.Length-1;iCnt++)
+            {
+                Arr[iCnt] = Convert.ToInt32(Console.ReadLine());
+            }
 
-            Console.WriteLine("Enter Number For Reverse Digits");
-            int iNo = Convert.ToInt32(Console.ReadLine());
-            ReverseNO.ReverseNumber(iNo);
+            for (int iCnt = 0; iCnt <= Arr.Length - 1; iCnt++)
+            {
+                CouponNumber.CouponNo(Arr[iCnt]);
+            }
+
             Console.ReadLine();
         }
     }
