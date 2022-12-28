@@ -13,7 +13,7 @@ namespace LogicalPrograms
 
             Console.WriteLine("Enter Number For Check Perfect Or Not");
             int iNo = Convert.ToInt32(Console.ReadLine());
-            FibonacciNo.PerfectNumber(iNo);
+            PrimeNo.PrimeNumber(iNo);
             Console.ReadLine();
         }
     }
