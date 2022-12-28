@@ -11,9 +11,9 @@ namespace LogicalPrograms
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Enter Number For Check Perfect Or Not");
+            Console.WriteLine("Enter Number For Reverse Digits");
             int iNo = Convert.ToInt32(Console.ReadLine());
-            PrimeNo.PrimeNumber(iNo);
+            ReverseNO.ReverseNumber(iNo);
             Console.ReadLine();
         }
     }
